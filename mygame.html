@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<HTML >
+  <HEAD>
+    <META charset="UTF-8">
+    <TITLE>International Love</TITLE>
+    
+    
+   
+
+
+        <LINK rel="stylesheet" href="gamecss.css">
+
+    
+    <SCRIPT src="gamejavascript.js" > </SCRIPT>
+    
+  </HEAD>
+
+  <BODY onLoad=startMe() onKeyPress=catchKeyCode()>
+
+    
+
+<DIV class="tophead">
+  <H1 id="mainhead">International Love</H1>
+  
+  <IMG src="intro.jpg" id="img1" alt='where is image'/>
+</DIV>
+
+
+<DIV class="container">
+  <DIV class="card"></DIV>
+  <DIV class="card">
+    <H1 class="title"></H1>
+    <FORM NAME=form1>
+	<INPUT TYPE=text SIZE=46 NAME=hint VALUE="Hii there!!" READONLY CLASS=txt1 ID="hello">
+	<LABEL for="Username"></LABEL>
+	
+      <DIV class="inputpart">
+        <INPUT id="Username" required="required" TYPE=text NAME=guess1 SIZE=50 CLASS=txt2 TITLE="Enter your guess here."/>
+        <LABEL for="Username">Country</label>
+        <DIV class="bar"></DIV>
+      </DIV>
+      
+      <DIV class="button-container">
+        <BUTTON TYPE=button VALUE=Guess! onClick=guessit() CLASS=btn TITLE="Click here to get a hint or check your guess."><SPAN>check it</SPAN></BUTTON>
+      </DIV>
+	  <DIV class="button-container">
+        <BUTTON TYPE=button VALUE=New onClick=newGame() CLASS=btn TITLE="Click here to start a new game."><SPAN>reset it</SPAN></BUTTON>
+      </DIV>
+	  
+      
+    </FORM>
+  </DIV>
+  
+</DIV>
+<a id="hint" onclick=helpMe() title="Get Some Hint!"></a>
+<a id="myintro" href="my.html" title="who made it!"></a>
+    
+
+        
+    
+    
+    
+  </BODY>
+</HTML>
